@@ -6,95 +6,98 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="CSS/Style.css" />
 		<link rel="stylesheet" type="text/css" href="CSS/Section.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 			<div class="nava">
-				<ul class="link">
-					<li>
-						<a href="#">COMPLEJO GLEW</a>
-					</li>
-					<li>
-						<a href="#" >BIBLIOTECA</a>
-					</li>
-					<li>
-						<a href="#">NATATORIO</a>
-					</li>
-					<li>
-						<a href="#" >PARROQUIA MARÍA REINA</a>
-					</li>
-					<li>
-						<a href="#">PLATAFORMA VIRTUAL</a>
-					</li>
-					<li>
-						<a href="#">ONU</a>
-					</li>
-				</ul>
-			</div>
-			<header class="header">
-				<img src="IMG/mural.jpg" alt="mural" title="25 años - Instituto Técnico María Reina" id="banner">
-			</header>
-			<div class="nava" id="navbar">
+
+				<p id="title"> 25 años <br> ITMR</p>
+
 				<ul class="menu">
 					<li>
-						<a href="#">INICIO</a>
+						<a href="#" class="a" onclick="ScrollThing(0)">INICIO</a>
 					</li>
 					<li>
-						<a href="#" >INFORMACIÓN</a>
+						<a href="#" class="a" onclick="ScrollThing(1)">INFORMACIÓN</a>
 					</li>
 					<li>
-						<a href="#">FOTOS</a>
+						<a href="#" class="a" onclick="ScrollThing(2)">FOTOS</a>
 					</li>
 					<li>
-						<a href="#" >EL GRUPO</a>
+						<a href="#" class="a" onclick="ScrollThing(3)">EL GRUPO</a>
 					</li>
 				</ul>
+
+
+				<div class="rep">
+				<iframe src="https://open.spotify.com/embed/user/alejomc23/playlist/4lkgtcYTjjJXv5Y5bay9QF" width="300" height="80" frameborder="0" allowtransparency="true">	
+				</iframe>
+				<a href="https://open.spotify.com/user/alejomc23/playlist/4lkgtcYTjjJXv5Y5bay9QF?si=vCZ6nv2ARMOaz6ecSes8Xg">Abrir Spotify</a>
+				</div>
 			</div>
-		<div>
-			<header>
-				
-			</header>
-		</div>
 		<div class="section">
-			<div class="A">
+			<div class="A" id="A">
+				<div class="container">
 				<h1>Inicio</h1>
 				<p>Esta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una nota</p>
-				<!--<iframe src="https://open.spotify.com/embed/user/alejomc23/playlist/4lkgtcYTjjJXv5Y5bay9QF" width="300" height="380" frameborder="0" allowtransparency="true">	
-				</iframe>
-				<a href="https://open.spotify.com/user/alejomc23/playlist/4lkgtcYTjjJXv5Y5bay9QF?si=vCZ6nv2ARMOaz6ecSes8Xg">Abrir Spotify</a>-->
+				</div>
 			</div>
-			<div class="B">
+			<div class="A B">
+				<div class="container">
 				<h1>Ejemplo</h1>
 				<p>Esta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una nota</p>
+				</div>
 			</div>
-			<div class="C">
+			<div class="A C">
+				<div class="w3-content" style="max-width:40%; margin-left:40%;">
+					<span style="margin-left: -10%; font-size: 2rem; padding: 1rem;">Fotos</span>
+  					<img class="mySlides" src="IMG/Galeria/(1).jpg" style="width:100%">
+  					<img class="mySlides" src="IMG/Galeria/(2).jpg" style="width:100%">
+  					<img class="mySlides" src="IMG/Galeria/(3).jpg" style="width:100%">
+
+  					<div class="w3-row-padding w3-section">
+    					<div class="w3-col s4">
+      						<img class="demo w3-opacity w3-hover-opacity-off" src="IMG/Galeria/(1).jpg" style="width:100%" onclick="currentDiv(1)">
+    					</div>
+    					<div class="w3-col s4">
+      						<img class="demo w3-opacity w3-hover-opacity-off" src="IMG/Galeria/(2).jpg" style="width:100%" onclick="currentDiv(2)">
+    					</div>
+    					<div class="w3-col s4">
+      						<img class="demo w3-opacity w3-hover-opacity-off" src="IMG/Galeria/(3).jpg" style="width:100%" onclick="currentDiv(3)">
+    					</div>
+  				</div>
+			</div>
+			</div>
+			<script src="JS/gallery.js"></script>
+			<div class="A D">
+				<div class="container">
 				<h1>Ejemplo</h1>
 				<p>Esta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una nota</p>
-			</div>
-			<div class="D">
-				<h1>Ejemplo</h1>
-				<p>Esta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una notaEsta es una nota</p>
+				</div>
 			</div>
 		</div>
 		<div>
 			<footer class ="footer">
 				<ul class="link">
 					<li>
-						<a href="#">COMPLEJO GLEW</a>
+						<a href="#" class="a">COMPLEJO GLEW</a>
 					</li>
 					<li>
-						<a href="#" >BIBLIOTECA</a>
+						<a href="#" class="a" >BIBLIOTECA</a>
 					</li>
 					<li>
-						<a href="#">NATATORIO</a>
+						<a href="#" class="a">NATATORIO</a>
 					</li>
 					<li>
-						<a href="#" >PARROQUIA MARÍA REINA</a>
+						<a href="#" class="a" >PARROQUIA MARÍA REINA</a>
 					</li>
 					<li>
-						<a href="#">PLATAFORMA VIRTUAL</a>
+						<a href="#" class="a">PLATAFORMA VIRTUAL</a>
 					</li>
 					<li>
-						<a href="#">ONU</a>
+						<a href="#" class="a">ONU</a>
 					</li>
 				</ul>
 				<p>
@@ -102,10 +105,11 @@
 				</p><br>
 				<p>
 					Hecho en base HTML5, CSS y JS. <br>
-					©2018 Copyright ITMR.
+					©2018 Copyright ITMR. Tobias Juhasz.
 				</p>
 			</footer>
 		</div>
-				<script type="text/javascript" src="JS/sticky.js"></script>
+				<!--<script type="text/javascript" src="JS/sticky.js"></script>-->
+				<script type="text/javascript" src="JS/scroll.js"></script>
 	</body>
 </html>
